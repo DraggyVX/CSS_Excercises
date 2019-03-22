@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Exercises</title>
+        <style type="text/css">
+            body {
+                background-color: dimgrey;
+                padding: 1px;
+                
+            }
+            h1 {
+                /*position: absolute; */
+                text-align: center;
+                left: auto;
+                right: auto;
+                color: aliceblue;
+                font-family: "andriod", sans-serif, "arial";
+                margin-bottom: 10px;
+                margin-top: 2px;
+                text-shadow: 1px 2px 40px black;
+                font-size: 80px;
+                font-weight: bold;
+            }
+            h3 {
+                text-align: center;
+                color: white;
+                font-family: cursive;
+                text-shadow: 1px 2px 50px white;
+                margin: 1px 1px 0 1px;
+            }
+            div#square {
+                position: absolute;
+                top: 20rem;
+                left: 850px;
+                background-color: aqua;
+                border: outset 1rem lightblue;
+                width: 5rem;
+                height: 5rem;
+                color: whitesmoke;
+                font-family: fantasy;
+                padding: 5px;
+                text-shadow: 1px 1px 10px white;
+                animation-name: example;
+                animation-duration: 4s;
+            }
+            div#circle {
+                background-color: aqua;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 100%;
+                position: absolute;
+                top: 30rem;
+                left: 853px;
+                border: outset 1rem lightblue;
+            }
+            div#triangle {
+                position: absolute;
+                left: 812px;
+                top: 33rem;
+                  width: 0; 
+                  height: 0; 
+                  border-top: 100px solid transparent;
+                  border-right: 100px solid transparent;
+                  border-left:100px solid transparent;
+                  border-bottom: 100px solid aqua; 
+                   
+            }
+            
+            img#Blueberry {
+                position: absolute;
+                left: 855px;
+                top: 47rem;
+                border-radius: 100%;
+                border: 1rem solid aqua;
+                z-index: 1;
+                height: 5rem;
+                width: 5rem;
+                transition: 2s;
+            }
+            
+            img#Blueberry:hover{
+                left: 845px;
+                width: 10rem;
+                height: 10rem;
+                border: 1rem solid blue;
+            }
+            
+            @keyframes example {
+              0%   {background-color:red; left:750px; top:10rem;}
+              25%  {background-color:yellow; left:950px; top:10rem;}
+              50%  {background-color:blue; left:950px; top:20rem;}
+              75%  {background-color:green; left:750px; top:20rem;}
+              100% {background-color:red; left:750px; top:10rem;}
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>CSS Exercises v1</h1>
+        <h3>Vol 1</h3>
+        <br>
+        <img src="Blueberry.jpg" alt="Blueberry" id="Blueberry">
+        <div id="square"></div>
+        <div id="circle"></div>
+        <div id="triangle"></div>
+    </body>
+    <script>
+        
+    </script>
+</html>
